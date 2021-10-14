@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/add_sub_exercise.h
+vector
+../include/vector
+cstdlib
+../include/cstdlib
+time.h
+../include/time.h
+limits
+../include/limits
+
+/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/add_sub_exercise.cpp
+add_sub_exercise.h
+/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/add_sub_exercise.h
+iostream
+/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/iostream
+
+/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/main.cpp
+add_sub_exercise.h
+/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/add_sub_exercise.h
+
