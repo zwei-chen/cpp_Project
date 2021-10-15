@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/add_sub_exercise.cpp" "/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug/CMakeFiles/project1.dir/src/add_sub_exercise.cpp.o"
-  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/main.cpp" "/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug/CMakeFiles/project1.dir/src/main.cpp.o"
+  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/src/add_sub_exercise.cpp" "/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug/CMakeFiles/project1.dir/src/add_sub_exercise.cpp.o"
+  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/src/main.cpp" "/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug/CMakeFiles/project1.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

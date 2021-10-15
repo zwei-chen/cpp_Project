@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1" -I"/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/include"
+CXX_INCLUDES = -I"/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1" -I"/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/include"
 
 CXX_FLAGS = -O2 -g -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -std=c++14 -std=c++14
 

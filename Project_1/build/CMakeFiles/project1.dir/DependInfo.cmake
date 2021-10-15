@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/add_sub_exercise.cpp" "CMakeFiles/project1.dir/src/add_sub_exercise.cpp.o" "gcc" "CMakeFiles/project1.dir/src/add_sub_exercise.cpp.o.d"
-  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/main.cpp" "CMakeFiles/project1.dir/src/main.cpp.o" "gcc" "CMakeFiles/project1.dir/src/main.cpp.o.d"
+  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/src/add_sub_exercise.cpp" "CMakeFiles/project1.dir/src/add_sub_exercise.cpp.o" "gcc" "CMakeFiles/project1.dir/src/add_sub_exercise.cpp.o.d"
+  "/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/src/main.cpp" "CMakeFiles/project1.dir/src/main.cpp.o" "gcc" "CMakeFiles/project1.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

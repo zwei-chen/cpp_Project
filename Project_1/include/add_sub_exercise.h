@@ -5,10 +5,9 @@
 #ifndef PROJECT1_ADD_SUB_EXERCISE_H
 #define PROJECT1_ADD_SUB_EXERCISE_H
 
-#include "vector"
-#include "cstdlib"
-#include "time.h"
-#include "limits"
+#include <vector>
+#include <chrono>
+#include <cstdio>
 
 struct Problem{
     //! problem
@@ -91,6 +90,18 @@ private:
       */
      bool ResultShow();
 
+     /**
+      * 输入检测
+      * @return
+      */
+     int CheckInt();
+
+     /**
+      * 输入检测
+      * @return
+      */
+     double CheckDouble();
+
 private:
     //! 相关参数
     int problem_num=0;
@@ -105,5 +116,7 @@ private:
     std::vector<Problem> problem_;
 
 };
+
+
 
 #endif //PROJECT1_ADD_SUB_EXERCISE_H

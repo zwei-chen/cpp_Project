@@ -13,10 +13,10 @@ AddSubExercise::AddSubExercise()
 
     //! 设定题目数量
     std::cout<<"现在请您设定题目的数量，目前程序只支持100以内的题目数量，输入数量后，并按回车"<<std::endl;
-    std::cin>>problem_num;
+    problem_num=CheckInt();
     while(problem_num>100||problem_num<=0){
         std::cout<<"您设定题目的数量有误，目前程序只支持100以内的题目数量，请重新输入数量后，并按回车"<<std::endl;
-        std::cin>>problem_num;
+        problem_num=CheckInt();
     }
     std::cout<<"您设定的题目数量为:"<<problem_num<<std::endl;
 
@@ -26,10 +26,10 @@ AddSubExercise::AddSubExercise()
     std::cout<<"难度2星：1000以内的加减法，如果选择此难度，请输入2，并按回车"<<std::endl;
     std::cout<<"难度3星：两项为100以内的加减乘除法，如果选择此难度，请输入3，并按回车"<<std::endl;
     int t_problem_star=0;
-    std::cin>>t_problem_star;
+    t_problem_star=CheckInt();
     while(t_problem_star>3||t_problem_star<=0){
         std::cout<<"您设定题目的难度有误，目前程序只支持1~3星难度 ，请重新输入难度后，并按回车"<<std::endl;
-        std::cin>>t_problem_star;
+        t_problem_star=CheckInt();
     }
     switch(t_problem_star){
         case 1:
@@ -110,20 +110,20 @@ bool AddSubExercise::StartAskQuestion()
         {
             case 0:
                 std::cout<<problem_[i].first_num<<"+"<<problem_[i].sencond_num<<"= ?"<<std::endl;
-                std::cin>>problem_[i].user_result;
+                problem_[i].user_result=CheckDouble();
                 break;
             case 1:
                 std::cout<<problem_[i].first_num<<"-"<<problem_[i].sencond_num<<"= ?"<<std::endl;
-                std::cin>>problem_[i].user_result;
+                problem_[i].user_result=CheckDouble();
                 break;
             case 2:
                 std::cout<<problem_[i].first_num<<"*"<<problem_[i].sencond_num<<"= ?"<<std::endl;
-                std::cin>>problem_[i].user_result;
+                problem_[i].user_result=CheckDouble();
                 break;
             case 3:
                 std::cout<<problem_[i].first_num<<"/"<<problem_[i].sencond_num<<"= ?"<<std::endl;
                 std::cout<<"输入答案请保留两位小数"<<std::endl;
-                std::cin>>problem_[i].user_result;
+                problem_[i].user_result=CheckDouble();
                 break;
         }
         finish_time=std::chrono::steady_clock::now();
@@ -173,6 +173,7 @@ double AddSubExercise::UseMethod(int a, int b, int method)
             int tmp=((double)a/(double)b+0.005)*100;
             return (double)tmp/100.0;
     }
+    return 0;
 }
 
 bool AddSubExercise::JudgeAnswer(Problem &_problem)
@@ -266,4 +267,36 @@ bool AddSubExercise::ResultShow()
 
     }
     return true;
+}
+
+int AddSubExercise::CheckInt()
+{
+    char tmp_ch;
+    int tmp_int;
+    while(1){
+        if(scanf("%d",&tmp_int)==0)
+        {
+            printf("输入非数字，请重新输入\n");
+            while ((tmp_ch = getchar()) != EOF && tmp_ch != '\n') ;
+            continue;
+        }
+        break;
+    }
+    return tmp_int;
+}
+
+double AddSubExercise::CheckDouble()
+{
+    char tmp_ch;
+    double tmp_double;
+    while(1){
+        if(scanf("%lf",&tmp_double)==0)
+        {
+            printf("输入非数字，请重新输入\n");
+            while ((tmp_ch = getchar()) != EOF && tmp_ch != '\n') ;
+            continue;
+        }
+        break;
+    }
+    return tmp_double;
 }

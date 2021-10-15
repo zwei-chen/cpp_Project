@@ -8,44 +8,44 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug"/>
+				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug"/>
+				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug"/>
+				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project1">
-				<Option output="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug/project1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug"/>
+				<Option output="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug/project1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1"/>
-					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/include"/>
+					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1"/>
+					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
@@ -54,21 +54,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="project1/fast">
-				<Option output="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug/project1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/cmake-build-debug"/>
+				<Option output="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug/project1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1"/>
-					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/include"/>
+					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1"/>
+					<Add directory="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
@@ -77,20 +77,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project\ 1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 project1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhiweichen/OneDrive/Code/C++\ Project/Project_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/add_sub_exercise.cpp">
+		<Unit filename="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/src/add_sub_exercise.cpp">
 			<Option target="project1"/>
 		</Unit>
-		<Unit filename="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/src/main.cpp">
+		<Unit filename="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/src/main.cpp">
 			<Option target="project1"/>
 		</Unit>
-		<Unit filename="/Users/zhiweichen/OneDrive/Code/C++ Project/Project 1/CMakeLists.txt">
+		<Unit filename="/Users/zhiweichen/OneDrive/Code/C++ Project/Project_1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
