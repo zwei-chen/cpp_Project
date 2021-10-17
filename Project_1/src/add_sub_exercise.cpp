@@ -80,7 +80,7 @@ bool AddSubExercise::ProblemCreat()
         return false;
 
     //! Creat Problem
-    Problem t_problem;
+    Problem t_problem{};
     srand((unsigned)time(NULL));
     for(int i=0;i<problem_num;i++){
 
@@ -126,6 +126,7 @@ bool AddSubExercise::StartAskQuestion()
                 problem_[i].user_result=CheckDouble();
                 break;
         }
+        std::cout<<"您输入的答案是："<<problem_[i].user_result<<std::endl;
         finish_time=std::chrono::steady_clock::now();
         problem_[i].true_or_false=JudgeAnswer(problem_[i]);
         problem_[i].times = std::chrono::duration_cast<std::chrono::duration<double> >(finish_time - start_time).count();
@@ -198,6 +199,9 @@ bool AddSubExercise::ResultShow()
     std::cin.get();
     int false_hit=0;
 
+    if(problem_num==0)
+        return false;
+
     //! 统计用时
     double sum_times=0,min_times=(std::numeric_limits<double>::max)();
     for(int i=0;i<problem_num;i++){
@@ -214,7 +218,7 @@ bool AddSubExercise::ResultShow()
         std::cout<<"您答错的题目数量为："<<show_false<<std::endl;
         std::cout<<"您答错的题目信息如下"<<std::endl;
         for(int i=0;i<problem_num;i++){
-            if(problem_[i].true_or_false== true)
+            if(problem_[i].true_or_false)
                 continue;
             switch (problem_[i].method)
             {
@@ -271,32 +275,116 @@ bool AddSubExercise::ResultShow()
 
 int AddSubExercise::CheckInt()
 {
-    char tmp_ch;
-    int tmp_int;
+    std::vector<char> tv_char;
+    bool is_good= true;
+    char c_input;
+    int i_output;
     while(1){
-        if(scanf("%d",&tmp_int)==0)
+        while( (c_input=getchar()) != '\n' )
+            tv_char.push_back(c_input);
+        //! 非法输入检测1： 只输入回车
+        if(tv_char.empty())
+            is_good= false;
+        //! 非法输入检测2： 第一位为0
+        else if(tv_char.at(0)==48)
+            is_good= false;
+        //! 非法输入检测3： 输入除了数字的字符
+        else
+            {
+                for(int i=0;i<tv_char.size();i++){
+                    if(tv_char.at(i)>=48&&tv_char.at(i)<=57)
+                        continue;
+                    else
+                    {
+                        is_good= false;
+                        break;
+                    }
+                }
+            }
+        if(is_good)
         {
-            printf("输入非数字，请重新输入\n");
-            while ((tmp_ch = getchar()) != EOF && tmp_ch != '\n') ;
-            continue;
+            i_output=0;
+            //! 输出转换
+            for(char i : tv_char)
+                i_output=i_output*10+i-'0';
+            return i_output;
         }
-        break;
+        else
+        {
+            std::cout<<"非法输入，请重试"<<std::endl;
+            is_good= true;
+            tv_char.clear();
+        }
     }
-    return tmp_int;
+
 }
 
 double AddSubExercise::CheckDouble()
 {
-    char tmp_ch;
-    double tmp_double;
+    std::vector<char> tv_char;
+    bool is_good= true;
+    size_t dot_index=0;
+    int dot_num=0;
+    char c_input;
+    double integer_num=0;
+    double dicimal_num=0;
     while(1){
-        if(scanf("%lf",&tmp_double)==0)
+        while( (c_input=getchar()) != '\n' )
+            tv_char.push_back(c_input);
+        //! 非法输入检测1： 只输入回车
+        if(tv_char.empty())
+            is_good= false;
+        //! 非法输入检测2： 第一位为0
+        else if(tv_char.at(0)==48)
+            is_good= false;
+        else
         {
-            printf("输入非数字，请重新输入\n");
-            while ((tmp_ch = getchar()) != EOF && tmp_ch != '\n') ;
-            continue;
+            dot_index=tv_char.size();
+            for(size_t i=0;i<tv_char.size();i++){
+                //! 非法输入检测3： 小数点标识大于两个
+                if(tv_char.at(i)=='.')
+                {
+                    dot_num++;
+                    dot_index=i;
+                    if(dot_num>1){
+                        is_good= false;
+                        break;
+                    }
+                    //!  非法输入检测4： 输入的数没有保留两位小数
+                    if(tv_char.size()-dot_index-1>2&&dot_num<2)
+                    {
+                        is_good= false;
+                        //std::cout<<"你输入的数没有保留两位小数"<<std::endl;
+                        break;
+                    }
+                }
+                //! 非法输入检测5： 输入除了数字的字符
+                else if(tv_char.at(i)>=48&&tv_char.at(i)<=57)
+                    continue;
+                else
+                {
+                    is_good= false;
+                    break;
+                }
+            }
         }
-        break;
+        if(is_good)
+        {
+            //! 输出转换
+            for (size_t i=0;i<dot_index;i++)
+                integer_num=integer_num*10+tv_char.at(i)-'0';
+            for(size_t i=dot_index+1;i<tv_char.size();i++)
+                dicimal_num=dicimal_num*10+tv_char.at(i)-'0';
+
+            return integer_num+dicimal_num/pow(10,(tv_char.size()-dot_index-1));
+        }
+        else
+        {
+            std::cout<<"非法输入，请重试"<<std::endl;
+            is_good= true;
+            dot_num=0;
+            tv_char.clear();
+        }
     }
-    return tmp_double;
+
 }

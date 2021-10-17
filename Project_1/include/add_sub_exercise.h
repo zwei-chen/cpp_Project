@@ -8,6 +8,7 @@
 #include <vector>
 #include <chrono>
 #include <cstdio>
+#include <cmath>
 
 struct Problem{
     //! problem
@@ -75,7 +76,7 @@ private:
       * @param method 计算方法
       * @return 计算后的数值
       */
-     double UseMethod(int a,int b,int method);
+     static double UseMethod(int a,int b,int method);
 
      /**
       * @brief 判断题目答案是否正确
